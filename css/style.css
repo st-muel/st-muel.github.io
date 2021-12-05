@@ -44,6 +44,7 @@ html, body {
 }
 
 .about-me {
+    opacity: 0;
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
 
@@ -53,6 +54,8 @@ html, body {
     text-align: center;
 
     color: var(--white);
+
+    animation: fade-in-right 1s 1s ease forwards;
 }
 
 .about-me-image {
@@ -76,6 +79,18 @@ html, body {
     0% {
         opacity: 0;
         transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
     }
 
     100% {
