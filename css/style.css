@@ -6,6 +6,8 @@ html, body {
     -moz-user-select: none;
 
     background-color: var(--white);
+
+    overflow-x: hidden !important;
 }
 
 .title-container {
@@ -71,8 +73,85 @@ html, body {
     animation: fade-in-left 1s 1s ease forwards;
 }
 
+.achievements-title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+    margin-top: 10vh;
+    margin-left: 10vw;
+
+    padding-left: 2vw;
+
+    width: 80vw;
+
+    text-align: center;
+}
+
+.achievements-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    width: 80vw;
+
+    margin-left: 10vw;
+}
+
+.achievements {
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+
+    text-align: center;
+
+    color: var(--dark);
+
+    animation: fade-in-right 1s 1s ease forwards;
+}
+
+.achievements-image {
+    height: 25vw;
+    width: 25vw;
+
+    opacity: 0;
+
+    margin-top: 100px;
+
+    box-shadow: 10px 5px 10px black;
+
+    border-radius: 100%;
+
+    animation: fade-in-left 1s 1s ease forwards;
+}
+
+.contact-me-container {
+    margin-top: 4vw;
+
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+    text-align: center;
+}
+
+.contact-me-icons-container {
+    margin-top: 0.8rem;
+}
+
+.contact-me-icon {
+    width: 4rem;
+    height: 4rem;
+
+    opacity: 0;
+
+    animation: fade-in-left 1s 1s ease forwards;
+}
+
 .padding-footer {
-    height: 15px;
+    height: 5vh;
 }
 
 @keyframes fade-in-left {
@@ -107,6 +186,14 @@ html, body {
     .about-me-image-container {
         padding-bottom: 1.5rem;
     }
+
+    .achievements-container {
+        padding-top: 1rem;
+    }
+
+    .achievements-image-container {
+        margin-top: 1rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -122,8 +209,16 @@ html, body {
         text-align: left;
     }
 
+    .achievements {
+        padding-left: 10%;
+    }
+
     .title-container {
         height: 45vh;
+    }
+
+    .achievements-title {
+        text-align: left;
     }
 }
 
